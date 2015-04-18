@@ -5,6 +5,7 @@ public class Hazard : MonoBehaviour
 {
 	public AudioClip GameOver;
 	public AudioSource GlobalAudioSource;
+	public GameObject RestartSprite;
 
 	// Use this for initialization
 	void Start ()
@@ -25,7 +26,7 @@ public class Hazard : MonoBehaviour
 			other.gameObject.GetComponent<PlayerController>().enabled = false;
 			other.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 			GlobalAudioSource.PlayOneShot(GameOver);
-			//Application.LoadLevel(Application.loadedLevel);
+			RestartSprite.GetComponent<SpriteRenderer>().enabled = true;
 		}
 	}
 }
