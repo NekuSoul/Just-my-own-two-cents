@@ -18,8 +18,6 @@ public class CentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movementX = (Input.GetKey(LeftKey) ? -1 : 0) + (Input.GetKey(RightKey) ? 1 : 0);
-        float movementY = (Input.GetKey(DownKey) ? -1 : 0) + (Input.GetKey(UpKey) ? 1 : 0);
-        transform.position += (Vector3)(new Vector2(movementX, movementY) * MovementSpeed * Time.deltaTime);
+        
     }
 }
