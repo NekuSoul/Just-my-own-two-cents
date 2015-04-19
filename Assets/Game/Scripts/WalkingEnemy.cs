@@ -67,11 +67,9 @@ public class WalkingEnemy : MonoBehaviour
         {
             if (Properties.ContainsProperty(hit.transform.gameObject, "Ground"))
             {
-                transform.parent = hit.transform;
                 return false;
             }
         }
-        transform.parent = null;
         return true;
     }
 
@@ -82,11 +80,9 @@ public class WalkingEnemy : MonoBehaviour
         {
             if (Properties.ContainsProperty(hit.transform.gameObject, "Ground"))
             {
-                transform.parent = hit.transform;
                 return true;
             }
         }
-        transform.parent = null;
         return false;
     }
 
@@ -97,11 +93,9 @@ public class WalkingEnemy : MonoBehaviour
         {
             if (Properties.ContainsProperty(hit.transform.gameObject, "Ground"))
             {
-                transform.parent = hit.transform;
                 return false;
             }
         }
-        transform.parent = null;
         return true;
     }
 
@@ -112,11 +106,9 @@ public class WalkingEnemy : MonoBehaviour
         {
             if (Properties.ContainsProperty(hit.transform.gameObject, "Ground"))
             {
-                transform.parent = hit.transform;
                 return true;
             }
         }
-        transform.parent = null;
         return false;
     }
 }

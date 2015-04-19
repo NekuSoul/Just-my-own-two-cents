@@ -1175,6 +1175,10 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
       value: 3.00105834
       objectReference: {fileID: 0}
+    - target: {fileID: 11498788, guid: 81b31d4844505bf4dac7ce88889a6811, type: 2}
+      propertyPath: NextScene
+      value: Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6199650, guid: 81b31d4844505bf4dac7ce88889a6811, type: 2}
     - {fileID: 6117114, guid: 81b31d4844505bf4dac7ce88889a6811, type: 2}
