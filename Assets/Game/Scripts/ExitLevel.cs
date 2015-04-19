@@ -23,9 +23,12 @@ public class ExitLevel : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerController>() is PlayerController)
         {
-            other.gameObject.GetComponent<PlayerController>().enabled = false;
-            GlobalAudioSource.PlayOneShot(ExitSound);
-            Invoke("ChangeLevel", 1f);
+            if (!other.gameObject.GetComponent<PlayerController>().Dead)
+            {
+                other.gameObject.GetComponent<PlayerController>().enabled = false;
+                GlobalAudioSource.PlayOneShot(ExitSound);
+                Invoke("ChangeLevel", 1f);
+            }
         }
     }
 

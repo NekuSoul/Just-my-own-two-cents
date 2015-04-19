@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public GameObject GroundPosition;
     public CentController Cent;
     public AudioClip JumpSound;
+    public bool Dead = false;
     public float JumpForce = 1f;
     public float MovementSpeed = 1f;
     public KeyCode UpKey = KeyCode.W;

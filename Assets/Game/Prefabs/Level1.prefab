@@ -376,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOver: {fileID: 8300000, guid: d2f8653dfaf55bc4080d32011f5fb2c1, type: 3}
   GlobalAudioSource: {fileID: 0}
+  RestartSprite: {fileID: 0}
 --- !u!212 &21224836
 SpriteRenderer:
   m_ObjectHideFlags: 1
